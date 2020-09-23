@@ -15,7 +15,7 @@ const BOATS = require('boats.js');
 const Boats = new BOATS(discordboats);
 const GuildConfig = require('./database/GuildConfig');
 const mongoose = require('mongoose');
-mongoose.connect(MONGODB_URL, {
+mongoose.connect(`${MONGODB_URL}`, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });
